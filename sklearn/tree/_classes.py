@@ -79,7 +79,11 @@ CRITERIA_REG = {
     "poisson": _criterion.Poisson,
 }
 
-DENSE_SPLITTERS = {"best": _splitter.BestSplitter, "random": _splitter.RandomSplitter}
+DENSE_SPLITTERS = {
+    "best": _splitter.BestSplitter,
+    "random": _splitter.RandomSplitter,
+    "faster_best": _splitter.FasterBestSplitter,
+}
 
 SPARSE_SPLITTERS = {
     "best": _splitter.BestSparseSplitter,
